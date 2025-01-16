@@ -27,6 +27,17 @@ wx_robot 'hello world'
 
 # --------------------------------------------------
 
+# send text
+wx_robot 'hello world'
+
+# send text with mentioned_list
+wx_robot 'hello world' -m user1 -m user2
+wx_robot 'hello world' -m @all
+
+# send text with metioned_mobile_list   
+wx_robot 'hello world' -M 13800138000 -M 13800138001
+wx_robot 'hello world' -M @all
+
 # send markdown
 wx_robot -t markdown '# hello world'
 
@@ -55,6 +66,8 @@ from wx_robot.core import Robot
 robot = Robot()
 
 robot.send_text('Hello, World!')
+robot.send_text('Hello, World!', mentioned_list=['user1', 'user2'])
+robot.send_text('Hello, World!', mentioned_mobile_list=['13800138000', '13800138001'])
 robot.send_markdown('# Hello, World!')
 robot.send_image('test.png')
 robot.send_file('README.md')

@@ -190,7 +190,7 @@ class Robot(object):
 
 
 if __name__ == '__main__':
-    robot = Robot('0559be4f-5d50-48f4-abd9-df504201d93e')
+    robot = Robot()
 
     robot.send_text('Hello, World!')
     # robot.send_text('Hello, World!', mentioned_list=['suqingdong'])
