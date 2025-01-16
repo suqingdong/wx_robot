@@ -1,0 +1,9 @@
+{
+    "name": "wx_robot_client",
+    "prog": "wx_robot",
+    "desc": "Robot Client for QiYe Wechat",
+    "url": "https://github.com/suqingdong/wx_robot",
+    "author": "suqingdong",
+    "author_email": "suqingdong1114@gmail.com",
+    "version": "1.0.0"
+}
